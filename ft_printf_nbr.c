@@ -1,40 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_dec.c                                    :+:      :+:    :+:   */
+/*   ft_printf_nbr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/18 15:18:59 by david             #+#    #+#             */
-/*   Updated: 2025/10/18 21:07:17 by david            ###   ########.fr       */
+/*   Created: 2025/10/18 20:49:14 by david             #+#    #+#             */
+/*   Updated: 2025/10/18 20:55:42 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	ft_printf_dec(unsigned int n)
+int	ft_printf_nbr(int n)
 {
-	char	tmp;
-
-	if (n < 0)
-	{
-		write(1, "4294967294", 10);
-	}
-	if (n > 9)
-	{
-		ft_printf_dec(n / 10);
-		ft_printf_dec(n % 10);
-	}
-	if (n >= 0 && n <= 9)
-	{
-		tmp = n + '0';
-		write(1, &tmp, 1);
-	}
-	return(1);
+	ft_putnbr_fd(n, 1);
+	return (1);
 }
-
 /*int	main(void)
 {
-	unsigned int u = 429496724;
-	printf("%u",u);
+	int n = 324224;
+	int count;
+	count = ft_printf_nbr(n);
 }*/

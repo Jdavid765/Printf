@@ -6,7 +6,7 @@
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 15:55:37 by yourlogin         #+#    #+#             */
-/*   Updated: 2025/10/18 15:22:23 by david            ###   ########.fr       */
+/*   Updated: 2025/10/18 21:07:32 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@
 
 int	ft_printf_char(char c);
 int	ft_printf_str(char *str);
-
+int	ft_printf_nbr(int n);
+int	ft_printf_dec(unsigned int n);
 #endif

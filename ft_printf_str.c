@@ -6,13 +6,13 @@
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:09:10 by yourlogin         #+#    #+#             */
-/*   Updated: 2025/10/18 15:21:37 by david            ###   ########.fr       */
+/*   Updated: 2025/10/18 20:14:22 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printf.h"
 
-int	*ft_printf_str(char *str)
+int	ft_printf_str(char *str)
 {
 	ft_putstr_fd(str, 1);
 	return (1);
