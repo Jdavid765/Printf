@@ -6,11 +6,11 @@
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:09:10 by yourlogin         #+#    #+#             */
-/*   Updated: 2025/10/18 14:45:30 by david            ###   ########.fr       */
+/*   Updated: 2025/10/18 15:21:37 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "printf.h"
 
 int	*ft_printf_str(char *str)
 {

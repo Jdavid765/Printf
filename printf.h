@@ -1,35 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   printf.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/17 14:58:49 by yourlogin         #+#    #+#             */
-/*   Updated: 2025/10/18 16:27:15 by david            ###   ########.fr       */
+/*   Created: 2025/10/17 15:55:37 by yourlogin         #+#    #+#             */
+/*   Updated: 2025/10/18 15:22:23 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#ifndef PRINTF_H
+# define PRINTF_H
 
-int	ft_printf(const char *s, ...)
-{
-    va_list args;
-    va_start(args, s);
-	char	tmp;
+# include <stdio.h>
+# include <unistd.h>
+# include <stdarg.h>
+# include "../libft/libft.h"
 
-	
-    for (int i = 0; *s; ++i) {
-		tmp = va_args(arg)
-    }
+int	ft_printf_char(char c);
+int	ft_printf_str(char *str);
 
-    va_end(args);
-
-    return total;
-}
-
-int main() {
-    int resultat = somme(6, 10, 20, 30, 40, 50, 50); // total = 150
-    printf("Résultat = %d\n", resultat);
-    return 0;
-}
+#endif
