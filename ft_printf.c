@@ -6,7 +6,7 @@
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 14:58:49 by yourlogin         #+#    #+#             */
-/*   Updated: 2025/10/19 21:00:30 by david            ###   ########.fr       */
+/*   Updated: 2025/10/19 21:41:54 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_selectf(char tmp, va_list current)
 	else if (tmp == 'x' || tmp == 'X')
 		ft_printf_hexa(va_arg(current, unsigned int), tmp, &count);
 	else if (tmp == 'p')
-		count += ft_printf_ptr(va_arg(current, void *)); 
+		count += ft_printf_ptr(va_arg(current, void *));
 	return (count);
 }
 
