@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_char.c                                   :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/17 15:56:43 by yourlogin         #+#    #+#             */
-/*   Updated: 2025/10/19 10:53:49 by david            ###   ########.fr       */
+/*   Created: 2025/10/17 15:55:37 by yourlogin         #+#    #+#             */
+/*   Updated: 2025/10/19 21:00:43 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+# define HEX_LOW "0123456789abcdef"
+# define HEX_UPP "0123456789ABCDEF"
 
-int	ft_printf_char(char c)
-{
-	write(1, &c, 1);
-	return (1);
-}
+# include <unistd.h>
+# include <stdarg.h>
 
-/*int	main(void)
-{
-	char c = 'A';
-	printf("%d", ft_printf_char(c));
-}*/
+int	ft_printf_char(char c);
+int	ft_printf_str(char *str);
+int	ft_printf_nbr(int n);
+int	ft_printf_dec(unsigned int n);
+int	ft_printf_hexa(unsigned int n, char tmp, int *count);
+int	ft_printf_ptr(void *content);
+
+#endif

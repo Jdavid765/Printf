@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_printf_ptr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/17 15:55:37 by yourlogin         #+#    #+#             */
-/*   Updated: 2025/10/18 21:07:32 by david            ###   ########.fr       */
+/*   Created: 2025/10/19 20:58:42 by david             #+#    #+#             */
+/*   Updated: 2025/10/19 21:02:26 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#include "ft_printf.h"
 
-# include <stdio.h>
-# include <unistd.h>
-# include <stdarg.h>
-# include "../libft/libft.h"
+int	ft_printf_ptr(void *content)
+{
+	
+}
 
-int	ft_printf_char(char c);
-int	ft_printf_str(char *str);
-int	ft_printf_nbr(int n);
-int	ft_printf_dec(unsigned int n);
-#endif
+#include <stdio.h>
+int	main(void)
+{
+	int a = 4;
+	printf("%p", &a);
+	ft_printf_ptr(&a);
+}

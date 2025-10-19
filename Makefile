@@ -6,19 +6,19 @@
 #    By: david <david@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/18 22:06:19 by david             #+#    #+#              #
-#    Updated: 2025/10/18 22:10:53 by david            ###   ########.fr        #
+#    Updated: 2025/10/19 21:02:52 by david            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = gcc
-NAME = libftprintf.all
+NAME = libftprintf.a
 SRC = ft_printf_char.c ft_printf_str.c ft_printf_dec.c\
-	ft_printf_nbr.c ft_printf.clean
+	ft_printf_nbr.c ft_printf.c ft_printf_hexa.c ft_printf_ptr.c
 OBJ = $(SRC:.c=.o)
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -rf
 
-all = $(NAME)
+all : $(NAME)
 
 %.o : %.c
 	$(CC) $(CFLAGS) -c $< -o $@
@@ -28,8 +28,9 @@ $(NAME) : $(OBJ)
 
 clean :
 	$(RM) $(OBJ)
-fclean: clean 
+fclean : clean
 	$(RM) $(NAME)
-re : fclean all
+re : fclean
+	$(MAKE) $(all)
 
-.POHNY : all clean fclean re
+.PHONY : all clean fclean re
