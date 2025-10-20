@@ -6,7 +6,7 @@
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 17:09:10 by yourlogin         #+#    #+#             */
-/*   Updated: 2025/10/19 11:59:58 by david            ###   ########.fr       */
+/*   Updated: 2025/10/20 14:01:00 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_printf_str(char *str)
 	int	count;
 
 	count = 0;
+	if (!str)
+		return (write(1, "(null)", 6));
 	while (*str)
 	{
 		write(1, str, 1);

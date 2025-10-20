@@ -6,7 +6,7 @@
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 15:55:37 by yourlogin         #+#    #+#             */
-/*   Updated: 2025/10/19 21:00:43 by david            ###   ########.fr       */
+/*   Updated: 2025/10/20 14:00:12 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ int	ft_printf_nbr(int n);
 int	ft_printf_dec(unsigned int n);
 int	ft_printf_hexa(unsigned int n, char tmp, int *count);
 int	ft_printf_ptr(void *content);
+int	ft_printf(const char *format, ...);
 
 #endif

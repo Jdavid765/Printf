@@ -6,7 +6,7 @@
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 14:58:49 by yourlogin         #+#    #+#             */
-/*   Updated: 2025/10/19 21:41:54 by david            ###   ########.fr       */
+/*   Updated: 2025/10/20 13:58:02 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,10 +70,11 @@ int	ft_printf(const char *format, ...)
 // 	//char sign = '%';
 // 	//int total = ft_printf("%%", sign);
 // 	//ft_printf("%d",total);
-// 	unsigned int x = -100;
+// 	//unsigned int x = -100;
 // 	//int i = 42;
-// 	int total = ft_printf("faux printf result = %X\n", x);
-// 	int total2 = printf("vrai printf result = %X\n", x);
+// 	unsigned long long int pointeur = 2;
+// 	int total = ft_printf("faux printf result = %p\n", (void *)&pointeur);
+// 	int total2 = printf("vrai printf result = %p\n", (void *)&pointeur);
 // 	ft_printf("faux printf = %d\n", total);
 // 	printf("vrai printf = %d\n", total2);
 // 	return (0);
